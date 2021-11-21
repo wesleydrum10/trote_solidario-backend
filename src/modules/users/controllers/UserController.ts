@@ -42,9 +42,10 @@ export default class UserController {
 
     public async show(request: Request, response: Response): Promise<Response>{
 
-        let {id_usuario} = request.params
+        let cod_usuario = request.params['cod_usuario']
+        let password = request.params['password']
         let showUserService = new ShowUserService()
-        let user = await showUserService.execute({id_usuario});
+        let user = await showUserService.execute({cod_usuario, password});
         return response.json(user);
     }
 

@@ -15,7 +15,7 @@ export class CreateProducts1632261882652 implements MigrationInterface {
                 },
                 {
                     name: 'cod_usuario',
-                    type: 'int',
+                    type: 'varchar',
                 },
                 {
                     name: 'descricao_produto',

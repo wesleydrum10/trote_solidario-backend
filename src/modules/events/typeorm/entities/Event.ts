@@ -15,8 +15,8 @@ class Event {
     @Column('int')
     cod_sala: number;
 
-    @Column('int')
-    cod_usuario: number;
+    @Column()
+    cod_usuario: string;
 
     @Column()
     data_evento: Date;

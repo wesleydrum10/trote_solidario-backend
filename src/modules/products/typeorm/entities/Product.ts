@@ -11,8 +11,8 @@ class Product {
     @PrimaryGeneratedColumn('uuid')
     id_produto: string
 
-    @Column('int')
-    cod_usuario: number
+    @Column()
+    cod_usuario: string
 
     @Column()
     descricao_produto: string

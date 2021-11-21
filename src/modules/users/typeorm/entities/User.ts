@@ -12,7 +12,7 @@ class User {
     id_usuario: string
 
     @Column()
-    cod_usuario: number
+    cod_usuario: string
 
     @Column()
     nome_usuario: string

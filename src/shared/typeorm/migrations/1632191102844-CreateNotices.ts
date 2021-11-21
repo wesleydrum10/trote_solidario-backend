@@ -15,7 +15,7 @@ export class CreateNotices1632191102844 implements MigrationInterface {
                 },
                 {
                     name: 'cod_usuario',
-                    type: 'int',
+                    type: 'varchar',
                 },
                 {
                     name: 'descricao_aviso',

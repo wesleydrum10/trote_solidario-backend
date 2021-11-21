@@ -12,8 +12,8 @@ class Notice {
     @PrimaryGeneratedColumn('uuid')
     id_aviso: string
 
-    @Column('int')
-    cod_usuario: number
+    @Column()
+    cod_usuario: string
 
     @Column()
     descricao_aviso: string

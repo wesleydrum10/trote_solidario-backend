@@ -15,11 +15,11 @@ export class CreateEvents1632191088756 implements MigrationInterface {
                 },
                 {
                     name: 'cod_sala',
-                    type: 'int',
+                    type: 'int'
                 },
                 {
                     name: 'cod_usuario',
-                    type: 'int'
+                    type: 'varchar'
                 },
                 {
                     name: 'data_evento',
