@@ -9,7 +9,7 @@ let sessionController = new SessionController()
 sessionUserRouter.post('/', 
 celebrate({
     [Segments.BODY]: {
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         password: Joi.string().required()
     }
 }),

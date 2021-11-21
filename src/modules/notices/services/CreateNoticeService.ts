@@ -4,7 +4,7 @@ import AppError from "../../../shared/errors/AppErrors";
 import NoticeRepository from '../typeorm/repositories/NoticeRepository';
 
 interface IRequest {
-    cod_usuario: number,
+    cod_usuario: string,
     descricao_aviso: string,
     titulo_aviso: string,
     prazo_aviso: Date,

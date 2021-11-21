@@ -7,7 +7,7 @@ import {sign} from 'jsonwebtoken'
 import authConfig from '../../../config/auth'
 
 interface IRequest {
-    cod_usuario: number,
+    cod_usuario: string,
     password: string
 }
 

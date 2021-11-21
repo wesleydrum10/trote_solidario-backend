@@ -9,18 +9,12 @@ let userController = new UserController()
 
 userRouter.get('/', isAuthenticated, userController.index) 
 
-userRouter.get('/:id_usuario', isAuthenticated,
-celebrate({
-    [Segments.PARAMS]: {
-        id_usuario: Joi.string().uuid().required()
-    }
-}),
-userController.show)
+userRouter.post('/:cod_usuario/:password', userController.show)
 
 userRouter.post('/',
 celebrate({
     [Segments.BODY]: {
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         password: Joi.string().required(),
         nome_usuario: Joi.string().required(),
         ocupacao_usuario: Joi.string().required(),
@@ -43,7 +37,7 @@ celebrate({
         id_usuario: Joi.string().uuid().required()
     },
     [Segments.BODY]: {
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         password: Joi.string().required(),
         nome_usuario: Joi.string().required(),
         ocupacao_usuario: Joi.string().required(),

@@ -5,7 +5,7 @@ import UserRepository from "../typeorm/repositories/UserRepository";
 
 interface IRequest {
     id_usuario: string,
-    cod_usuario: number,
+    cod_usuario: string,
     password: string,
     nome_usuario: string,
     ocupacao_usuario: string,

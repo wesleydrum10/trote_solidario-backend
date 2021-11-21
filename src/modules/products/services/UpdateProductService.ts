@@ -5,7 +5,7 @@ import ProductRepository from "../typeorm/repositories/ProductRepository";
 
 interface IRequest {
     id_produto: string,
-    cod_usuario: number,
+    cod_usuario: string,
     descricao_produto: string,
     nome_produto: string,
     quantidade_produto: number

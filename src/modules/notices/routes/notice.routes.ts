@@ -19,7 +19,7 @@ noticeController.show)
 noticeRouter.post('/', isAuthenticated,
 celebrate({
     [Segments.BODY]: {
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         descricao_aviso: Joi.string().required(),
         titulo_aviso: Joi.string().required(),
         prazo_aviso: Joi.date().required(),
@@ -43,7 +43,7 @@ celebrate({
         id_aviso: Joi.string().uuid().required()
     },
     [Segments.BODY]: {
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         descricao_aviso: Joi.string().required(),
         titulo_aviso: Joi.string().required(),
         prazo_aviso: Joi.date().required(),

@@ -5,7 +5,7 @@ import EventRepository from '../typeorm/repositories/EventRepository';
 
 interface IRequest {
     cod_sala: number,
-    cod_usuario: number,
+    cod_usuario: string,
     data_evento: Date,
     descricao_evento: string,
     titulo_evento: string

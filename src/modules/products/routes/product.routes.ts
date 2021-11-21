@@ -19,7 +19,7 @@ productController.show)
 productRouter.post('/', isAuthenticated,
 celebrate({
     [Segments.BODY]: {
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         descricao_produto: Joi.string().required(),
         nome_produto: Joi.string().required(),
         quantidade_produto: Joi.number().required()
@@ -41,7 +41,7 @@ celebrate({
         id_produto: Joi.string().uuid().required()
     },
     [Segments.BODY]: {
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         descricao_produto: Joi.string().required(),
         nome_produto: Joi.string().required(),
         quantidade_produto: Joi.number().required()

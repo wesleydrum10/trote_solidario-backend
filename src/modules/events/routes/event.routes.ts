@@ -20,7 +20,7 @@ eventRouter.post('/', isAuthenticated,
 celebrate({
     [Segments.BODY]: {
         cod_sala: Joi.number().required(),
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         data_evento: Joi.date().required(),
         descricao_evento: Joi.string().required(),
         titulo_evento: Joi.string().required()
@@ -43,7 +43,7 @@ celebrate({
     },
     [Segments.BODY]: {
         cod_sala: Joi.number().required(),
-        cod_usuario: Joi.number().required(),
+        cod_usuario: Joi.string().required(),
         data_evento: Joi.date().required(),
         descricao_evento: Joi.string().required(),
         titulo_evento: Joi.string().required()
